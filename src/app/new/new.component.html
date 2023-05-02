@@ -1,0 +1,9 @@
+<form>
+    <label for="component-type">Select a component:</label>
+    <select name="component-type" [(ngModel)]="selectedComponentType" (ngModelChange)="loadComponent()">
+      <option value="ComponentA">Component A</option>
+      <option value="ComponentB">Component B</option>
+    </select>
+  </form>
+
+  <div #dynamicComponentContainer></div>
